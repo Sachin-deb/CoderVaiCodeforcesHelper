@@ -2,6 +2,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 import requests
 import time
+# import operations.to_do as to_do
 
 app = FastAPI()
 
@@ -13,6 +14,7 @@ app.add_middleware(
     allow_headers=["*"],  # Allow all headers
 )
 
+# to_do.db_session.query(k)
 
 @app.get("/")
 def read_root():

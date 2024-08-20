@@ -2,12 +2,12 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from model.sql_model import BASE
 
-db_user = 'postgres'
-db_password = 'postgres'
-db_port = 5432
-db_host = 'localhost'
+# db_user = 'postgres'
+# db_password = 'postgres'
+# db_port = 5432
+# db_host = 'localhost'
 
-uri: str = F'postgresql://{db_user}:{db_password}@{db_host}:{db_port}/CoderVai'
+uri: str = "cockroachdb://postgres:l3K61xThjZKaHtATjyK7Iw@live-bleater-5858.7s5.aws-ap-south-1.cockroachlabs.cloud:26257/defaultdb"
 
 engine = create_engine(uri)
 
