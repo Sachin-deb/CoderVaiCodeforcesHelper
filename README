@@ -1,0 +1,10 @@
+# Codeforces Contest Leaderboard API
+
+This FastAPI application provides endpoints for retrieving and managing leaderboard data from Codeforces contests. It includes endpoints to get leaderboard standings, contest lists, and user-specific contest results.
+
+## Features
+
+- **Get Leaderboard Data:** Retrieve the leaderboard standings for a specific contest.
+- **Get Contest List:** Fetch a list of recent Codeforces contests.
+- **Get Contest Info:** Obtain detailed information about contests, including start times and durations.
+- **Cached Leaderboard:** Fetch a cached leaderboard for predefined users.
