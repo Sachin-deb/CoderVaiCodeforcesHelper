@@ -1,6 +1,5 @@
 from fastapi import FastAPI
-from app.api import leaderboard
-from app.api import contest_info
+from app.api import leaderboard, contest_info, auth
 
 def create_app() -> FastAPI:
     app = FastAPI()
@@ -8,6 +7,7 @@ def create_app() -> FastAPI:
     # Register the routers
     app.include_router(leaderboard.router)
     app.include_router(contest_info.router)
+    app.include_router(auth.router)
     
     return app
 

@@ -1,0 +1,16 @@
+{
+    "sqltools.connections": [
+        {
+            "pgOptions": {
+                "ssl": {
+                    "rejectUnauthorized": true
+                }
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "driver": "CockroachDB",
+            "name": "SachinDB",
+            "connectString": "cockroachdb://postgres:l3K61xThjZKaHtATjyK7Iw@live-bleater-5858.7s5.aws-ap-south-1.cockroachlabs.cloud:26257/defaultdb"
+        }
+    ]
+}

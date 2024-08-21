@@ -1,7 +1,7 @@
 import sys
 sys.path.append('./')
 from connection import db_session
-from model.sql_model import Todo
+from app.model.sql_model import Todo
 
 def create_to_do(todo: str): 
     try:

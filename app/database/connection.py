@@ -1,6 +1,7 @@
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
-from model.sql_model import BASE
+# from app.model.sql_model import BASE
+from app.model import Base
 
 # db_user = 'postgres'
 # db_password = 'postgres'
@@ -11,7 +12,7 @@ uri: str = "cockroachdb://postgres:l3K61xThjZKaHtATjyK7Iw@live-bleater-5858.7s5.
 
 engine = create_engine(uri)
 
-BASE.metadata.create_all(bind=engine)
+Base.metadata.create_all(bind=engine)
 print("Tables created successfully")
 
 # Create a session factory bound to the engine
